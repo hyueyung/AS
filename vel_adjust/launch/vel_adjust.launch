@@ -1,0 +1,5 @@
+<launch>
+
+<node name="vel_adjust" pkg="vel_adjust" type="vel_adjust_node.py"/>
+
+</launch>
