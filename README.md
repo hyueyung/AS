@@ -4,16 +4,28 @@ This package contains a node that forms part of the ROS system controlling a 4WD
 # How to launch the node
 1. Download the vel_adjust folder and place the folder inside the /src folder of your 4WD robot workspace.
 2. Make sure the vel_adjust/scripts/vel_adjust_node.py is executable after download. If it is not an executable, run the following bash command in the script folder:
-''''
+```
 sudo chmod +x vel_adjust_node.py
-''''
-3. Use the following command to launch the node (from the workspace folder):
-''''
-roslaunch vel_adjust vel_adjust_node.py
-''''
+```
+3. Source the devel/setup.bash (from the workspace folder)
+```
+source devel/setup.bash
+```
+4. Launch the node (from the workspace folder) using the following command:
+```
+roslaunch vel_adjust vel_adjust.launch
+```
 
-# Dependencies
+# Dependencies and other files
 rospy and std_msgs are the only 2 dependencies of this package.
+
+Other than the .launch and .py files that we have already described above, this package also contains "CMakeLists.txt" and "package.xml".
+
+"CMakeLists.txt" specifies to CMake how the package should be built and where the installation should end up.
+
+And the "package.xml" contains meta information such as the package description, maintainer info, license and dependencies.
+
+
 
 # My comment
 Thank you very much for giving me the opportunity to carry out the assessment. It has taken me about 3 hours up to this point. I would not be able to finish the assessment this quickly (although still an hour longer than the standard time) if I didn't learn ROS1 all over again and reprogramed my remote control car using ROS after the interview.
