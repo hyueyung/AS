@@ -21,7 +21,7 @@ rospy and std_msgs are the only 2 dependencies of this package.
 
 Other than the .launch and .py files that we have already described above, this package also contains "CMakeLists.txt" and "package.xml".
 
-"CMakeLists.txt" specifies to CMake how the package should be built and where the installation should end up.
+"CMakeLists.txt" specifies to CMake build system how the package should be built and where the installation should end up.
 
 And the "package.xml" contains meta information such as the package description, maintainer info, license and dependencies.
 
